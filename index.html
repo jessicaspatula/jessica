@@ -30,26 +30,33 @@
      }
      a{
       color: rgb(150,150,3);
+      color: rgb(227,227,133);
       text-decoration: none;
      }
      a:hover{
       color: rgb(163,151,131);
      }
+     p.note{
+
+	margin: 0 0 0 20px;
+	font-size: 75%;
+
+	}
 
      #mahface{
       border-radius: 75px;
       width: 110px;
       margin: -200px auto 0 auto;
      }
-       .photoframe{
+     .photoframe{
           float:right;
           margin-left: auto;
           margin-right: auto;
        }
      
      .panel{
-      /*background-color: rgba(37,45,54,0.8);*/
-      background-color: rgba(255,255,255,1);
+      background-image: radial-gradient(circle at 100% 100%, rgba(255,255,255,1) , rgba(37,45,54,0.8), rgba(37,45,54,0.8), rgba(37,45,54,0.8)  );
+      color: rgb(37,45,54);
       color: rgb(173,183,198);
       border-radius: 25px;
       border: 2px solid rgb(227,227,133);
@@ -59,12 +66,14 @@
      }
      
      #hdr{
-      font-size: 2.2em;
-      text-align: center;
+	background-image: none ;
+        background-color: rgba(37,45,54,0.8);
+        font-size: 2.2em;
+        text-align: center;
      }
      
      #bod{
-        font-size: 1.2em;
+        font-size: 1.1em;
      }
 
      body{
@@ -100,7 +109,7 @@
        #bod{
         margin: 30px 0 0 0;
         float: right;
-        font-size: 1.8em;
+        font-size: 1.5em;
        }
 
        .panel{
@@ -112,8 +121,8 @@
        }
      #mahface{
       border-radius: 75px;
-      width: 110px;
-      margin: -180px auto 0 auto;
+      width: 190px;
+      margin: 0px auto 0 auto;
      }
        .photoframe{
           float:right;
@@ -126,6 +135,15 @@
        }
 
      }
+
+     @media (min-width: 1700px){
+       #hdr{
+        position: absolute;
+        top: 0;
+        right: 15%;
+       }
+    }
+
 
      html{
       background: url('http://mycolectronic.com/Images/jm/IMAG3951-2.jpg') no-repeat center center fixed; 
@@ -160,9 +178,9 @@
  <h2>sites and blogs</h2>
  <ul>
   <!-- <li><a href="http://cyclo.mycolectronic.com">cyclo.mycolectronic.com</a> - a bike touring blog</li> -->
-  <li><a href="http://jjmanford.com">JJ Manford</a> - Portfolio site for a talented Brooklyn based painter, JJ</li>
+  <li><a href="http://jjmanford.com">JJ Manford</a> Portfolio site for talented Brooklyn based painter, JJ. <p class="note"> Undergoing transition away from PHP/MySQL to static site fetching custom API.</p></li>
   <li><a href="http://clusterf.ckunited.org">clusterf*ck united</a> community sharing and communication tool</li>
-  <li><a href="http://mycolectronic.com">mycolectronic.com</a> - a crafting blog</li>
+  <li><a href="http://mycolectronic.com">mycolectronic.com</a> photo crowdsource tool for classmates receiving sewing lesson </li>
  </ul>
 </div>
 
